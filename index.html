@@ -1,0 +1,201 @@
+<!doctype html>
+<html class="no-js" lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no"/>
+    <title>Foundation for Sites</title>
+    <link rel="stylesheet" href="css/app.css">
+</head>
+<body>
+
+<div class="grid-x grid-padding-x webapp-container">
+
+    <div class="cell small-12 medium-4 profile-card">
+        <div class="grid-x grid-padding-x">
+            <div class="cell small-12 align-top text-center">
+                <img class="Page-1" src="assets/profile-pic.svg" ALIGN=”center”>
+            </div>
+        </div>
+        <div class="cell small-12" style="height: 4rem;"></div>
+
+        <!--Header-->
+        <div class="grid-x grid-padding-x align-center">
+            <div class="cell small-2 medium-1"></div>
+            <div class="cell small-8 medium-10 text-center">
+                <div class="profile-header-text">Front End Challenge!</div>
+            </div>
+        </div>
+
+        <div class="cell small-12" style="height: 1rem;"></div>
+
+        <!--Text-->
+        <div class="grid-x grid-padding-x text-center">
+            <div class="cell small-2 medium-2"></div>
+            <div class="cell small-8  medium-8 text-center">
+                <div class="profile-inline-text">This is a design that you will need to code up and impress us.</div>
+            </div>
+        </div>
+
+        <div class="cell small-12" style="height: 4rem;"></div>
+
+        <div class="grid-x grid-padding-x">
+            <div class="cell small-12  text-center next-button" onclick="onClick(this)">
+            </div>
+        </div>
+    </div>
+
+
+    <div class="cell small-12 medium-6 form-card">
+        <form data-abide novalidate style="margin: 10px;">
+            <div class="grid-x grid-margin-x">
+                <div class="cell small-10 medium-3">
+                    <label for="middle-label" class="text-left middle">Name</label>
+                </div>
+                <div class="cell small-12 medium-9">
+                    <input class="focus-name" type="text" id="middle-label">
+                </div>
+            </div>
+
+            <div class="grid-x grid-margin-x">
+                <div class="cell medium-3 small-12">
+                    <label for="middle-label" class="text-left middle">Gender</label>
+                </div>
+                <div class="radio cell medium-9 small-12 align-self-middle">
+                    <div class="input-group">
+                        <input type="radio" name="gender" value="Male" id="genderMale">
+                        <label class="middle male-img" for="genderMale">
+                            <span class="middle" style="padding-left: 50px;">Male</span>
+                        </label>
+                        <input type="radio" name="gender" value="Male" checked>
+
+                        <div class="cell small-12" style="width: 50px;"></div>
+
+                        <input type="radio" name="gender" value="Female" id="genderFemale">
+                        <label class="middle female-img" for="genderFemale">
+                            <span class="middle" style="padding-left: 50px;">Female</span>
+                        </label>
+                        <input type="radio" name="gender" value="Female" checked>
+                    </div>
+                </div>
+            </div>
+
+            <div class="grid-x grid-padding-x">
+                <div class="cell small-12 medium-3">
+                    <label for="dp1" class="text-left middle">Date of Birth</label>
+                </div>
+                <div class="datepicker cell small-12 medium-9">
+                    <div class="input-group">
+                        <input type="text" class="datepicker span2 input-group-field" placeholder="01/02/1983" id="dp1">
+                        <a class="input-group-label" onclick="alert('tes');"><img
+                                src="assets/datepicker-button.svg"></a>
+
+                    </div>
+                </div>
+            </div>
+
+            <div class="grid-x grid-margin-x">
+                <div class="cell small-12 medium-3">
+                    <label for="email" class="text-left middle email">
+                        <div class="email-circle"></div>
+                        Email</label></div>
+                <div class="cell small-12 medium-9">
+                    <input type="email" id="email" required>
+                    <span class="form-error">Invalid email address</span>
+                </div>
+            </div>
+
+            <div class="grid-x grid-margin-x">
+                <div class="cell small-12 medium-3">
+                    <label for="tel" class="text-left middle">Mobile</label>
+                </div>
+                <div class="cell small-12 medium-9">
+                    <input type="tel" id="tel" placeholder="+91 98765 43210">
+                </div>
+            </div>
+
+
+            <div class="grid-x grid-margin-x">
+                <div class="cell small-12 medium-3">
+                    <label for="customer-id" class="text-left middle">Customer ID</label>
+                </div>
+                <div class="cell small-12 medium-9">
+                    <input type="number" id="customer-id" placeholder="576802-ERD0348 45">
+                </div>
+            </div>
+
+            <div class="grid-x grid-margin-x">
+                <div class="cell medium-3 small-12">
+                    <label for="middle-label" class="text-left middle">Gender</label>
+                </div>
+                <div class="radio cell medium-3 small-6 align-self-middle">
+
+                    <div class="input-group">
+                        <input type="radio" name="membership" value="Classic" id="membershipClassic">
+                        <label class="middle membership-img" for="membershipClassic">
+                            <span class="middle" style="padding-left: 50px;">Classic</span>
+                        </label>
+                        <input class="input-group-label" type="radio" name="membership" value="Classic">
+                    </div>
+                </div>
+
+                <div class="radio cell medium-3 small-6 align-self-middle">
+                    <input type="radio" name="membership" value="Silver" id="membershipSilver">
+                    <label class="middle membership-img" for="membershipSilver">
+                        <span class="middle" style="padding-left: 50px;">Silver</span>
+                    </label>
+                    <input type="radio" name="membership" value="Silver">
+                </div>
+
+                <div class="radio cell medium-3 small-12 align-self-middle">
+                    <input type="radio" name="membership" value="Gold" id="membershipGold">
+                    <label class="middle membership-img" for="membershipGold">
+                        <span class="middle" style="padding-left: 50px;">Gold</span>
+                    </label>
+                    <input type="radio" name="gender" value="Gold">
+                </div>
+            </div>
+
+            <div class="button-group stacked-for-small">
+                <button class="clear button small-12  medium-2 cancel-button">CANCEL</button>
+                <button class="button small-12  medium-2 save-button">SAVE</button>
+            </div>
+        </form>
+    </div>
+
+    <div class="cell small-12 medium-6 body-card   is-hidden">
+        <div class="grid-x grid-padding-x body-text-header">
+            <div class="small-1 medium-2"></div>
+            <div class="small-10 medium-8 text-left">
+                My world today
+            </div>
+        </div>
+        <div class="cell small-12" style="height: 2rem;"></div>
+
+        <div class="grid-x grid-padding-x body-text-inline align-self-middle">
+            <div class="small-1 medium-2"></div>
+            <div class="small-10 medium-7 text-left">
+                Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.
+                Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante.
+                <span>View all days</span> eu libero sit amet quam
+                egestas semper. Aenean ultricies mi
+                vitae est.
+                Mauris placerat eleifend leo. Quisque sit amet est et sapien ullamcorper pharetra.
+                Vestibulum erat wisi, condimentum sed, commodo vitae, ornare sit amet, wisi.
+                Aenean fermentum, elit eget tincidunt condimentum, eros ipsum rutrum orci, sagittis tempus lacus enim ac
+                dui.
+                Donec non enim in turpis pulvinar facilisis. Ut felis.
+                Praesent dapibus, neque id cursus faucibus, tortor neque egestas augue, eu vulputate magna eros eu erat.
+                Aliquam erat.
+            </div>
+        </div>
+    </div>
+</div>
+<script src="node_modules/jquery/dist/jquery.js"></script>
+<script src="node_modules/what-input/dist/what-input.js"></script>
+<script src="node_modules/foundation-sites/dist/js/foundation.js"></script>
+<script src="js/app.js"></script>
+
+
+</body>
+</html>
